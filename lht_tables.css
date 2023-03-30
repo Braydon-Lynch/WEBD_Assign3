@@ -45,7 +45,7 @@
       border: 2px solid grey;
    }
    td::before{
-      position: absolute;
+      position: absolute(0,0);
       left: 0;
       top: 0;
       width: 40%;
@@ -54,9 +54,13 @@
    }
 }
 
-
-
 /* =============================================
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
+
+@media only screen and (min-width: 641px){
+   table, tbody, tr, td, th, caption{
+      display: block;
+   }
+}
