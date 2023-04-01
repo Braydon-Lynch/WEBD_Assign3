@@ -44,12 +44,12 @@
       background-color: rgb(255,235,178);
       border: 2px solid grey;
    }
-   td::before{
-      position: absolute(0,0);
+   table td::before{
+      content: attr(data-date);
+      position: absolute;
       left: 0;
       top: 0;
       width: 40%;
-      content: attr(data-date);
       padding: 5px;
    }
 }
@@ -60,18 +60,25 @@
 */
 
 @media only screen and (min-width: 641px) {
-   body {
-     background-color: lightblue;
+   table{
+      background-image: url("lht_photo1.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 40%;
+      border: 6px double rgb(154, 64, 3);
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: 85%;
+      table-layout: fixed;
    }
- }
-table{
-   background-image: url("lht_photo1.png");
-   background-repeat: no-repeat;
-   background-position: bottom right;
-   background-size: 40%;
-   border: 6px double rgb(154, 64, 3);
-   border-collapse: collapse;
-   margin: 20px auto;
-   width: 85%;
-   table-layout: fixed;
+   table th, table td{
+      border: 1px solid grey;
+      font-size: 0.85em;
+      font-weight: normal;
+      padding: 5px;
+      text-align: top;
+      width: 14.28%;
+      word-wrap: break-word;
+   }
+   
 }
