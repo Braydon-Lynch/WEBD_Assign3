@@ -59,8 +59,19 @@
    =============================================
 */
 
-@media only screen and (min-width: 641px){
-   table, tbody, tr, td, th, caption{
-      display: block;
+@media only screen and (min-width: 641px) {
+   body {
+     background-color: lightblue;
    }
+ }
+table{
+   background-image: url("lht_photo1.png");
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   background-size: 40%;
+   border: 6px double rgb(154, 64, 3);
+   border-collapse: collapse;
+   margin: 20px auto;
+   width: 85%;
+   table-layout: fixed;
 }
