@@ -6,14 +6,23 @@
    Case Problem 2
 
    Columns Style Sheet
-   Author: 
-   Date:   
+   Author: Braydon Lynch
+   Date: 04/01/23 
 
    Filename:   lht_columns.css
 
 */
 
-
-
 /* Column Styles */
 
+article{
+   column-width: 260px;
+   column-gap: 20px;
+   border-right: 1px solid rgb(154, 64, 31);
+   border-left: 1px solid rgb(154, 64, 31);
+   widows: 2;
+   orphans: 2;
+}
+article h1{
+   column-span: all;
+}
